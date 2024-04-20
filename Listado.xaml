@@ -1,0 +1,20 @@
+﻿<Window x:Class="Lab05.Listado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab05"
+        mc:Ignorable="d"
+        Title="Listado" Height="450" Width="1000">
+    <Grid>
+        
+        <Button Name="btnActualizar" Click="btnActualizar_click" Width="80" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top">Actualizar</Button>
+        <DataGrid Height="400" Width="1000" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Name="dataGrid1">
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <EventSetter Event="PreviewMouseDoubleClick" Handler="b1SendData"/>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+    </Grid>
+</Window>
